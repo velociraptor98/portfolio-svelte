@@ -7,7 +7,7 @@ import type {
 	ResumePageParams
 } from './utils';
 
-export const PortfolioTitle = 'Slick template with Svelte';
+export const PortfolioTitle = 'Updated portfolio site';
 
 export const NavBar: NavBarParams = {
 	home: 'Home',
@@ -19,16 +19,16 @@ export const NavBar: NavBarParams = {
 
 export const Home: HomeParams = {
 	title: 'Home Page',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Kunal',
+	lastName: 'Singh',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		'First template thingie in progress',
 	links: {
-		github: 'https://github.com/',
-		linkedin: 'https://www.linkedin.com/',
-		twitter: 'https://twitter.com/',
-		stackoverflow: 'https://stackoverflow.com/',
-		email: 'riadh-adrani@hotmail.fr'
+		github: 'https://github.com/velociraptor98',
+		linkedin: 'https://www.linkedin.com/in/kunalsingh98/',
+		// twitter: 'https://twitter.com/',
+		// stackoverflow: 'https://stackoverflow.com/',
+		// email: 'riadh-adrani@hotmail.fr'
 	},
 	skills: Object.keys(Technologies).map((key) => (Technologies as Record<string, Technology>)[key])
 };
@@ -69,14 +69,44 @@ export const ProfessionalCareerParams: CareerParams = {
 	title: 'Professional Experience',
 	items: [
 		{
-			company: { logo: Assets.Unknown, name: 'Home' },
+			company: { logo: Assets.Unknown, name: 'SmartServ' },
 			description: 'Creating awesome applications for customers.',
-			employmentType: EmploymentType.Freelance,
+			employmentType: EmploymentType.FullTime,
 			industry: 'Software Development',
-			location: 'Home',
+			location: 'Pune',
 			period: { from: new Date() },
 			skills: [Technologies.JavaScript, Technologies.HTML, Technologies.CSS],
-			title: 'Freelancer'
+			title: 'Software Design Engineer - II'
+		},
+		{
+			company: { logo: Assets.Unknown, name: 'SmartServ' },
+			description: 'Creating awesome applications for customers.',
+			employmentType: EmploymentType.FullTime,
+			industry: 'Software Development',
+			location: 'Pune',
+			period: { from: new Date() },
+			skills: [Technologies.JavaScript, Technologies.HTML, Technologies.CSS],
+			title: 'Software Design Engineer - I'
+		},
+		{
+			company: { logo: Assets.Unknown, name: 'MAQ Software' },
+			description: 'Creating awesome applications for customers.',
+			employmentType: EmploymentType.FullTime,
+			industry: 'Software Development',
+			location: 'Hyderabad',
+			period: { from: new Date() },
+			skills: [Technologies.Csharp, Technologies.HTML, Technologies.CSS],
+			title: 'Software Engineer - I'
+		},
+		{
+			company: { logo: Assets.Unknown, name: 'MAQ Software' },
+			description: 'Creating awesome applications for customers.',
+			employmentType: EmploymentType.Internship,
+			industry: 'Software Development',
+			location: 'Hyderabad',
+			period: { from: new Date() },
+			skills: [Technologies.Csharp, Technologies.HTML, Technologies.CSS],
+			title: 'Software Engineer - I'
 		}
 	]
 };
@@ -117,6 +147,6 @@ export const ResumeParams: ResumePageParams = {
 	cv: ''
 };
 
-export const SearchPageParams = {
-	title: 'Search'
-};
+// export const SearchPageParams = {
+// 	title: 'Search'
+// };
