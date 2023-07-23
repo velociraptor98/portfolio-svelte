@@ -6,7 +6,7 @@
 		PersonalProjects,
 		PortfolioTitle,
 		ProfessionalCareerParams,
-		SearchPageParams
+		// SearchPageParams
 	} from '$lib/params';
 	import { useTitle, Icons } from '$lib/utils';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
@@ -98,9 +98,9 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{useTitle(SearchPageParams.title, PortfolioTitle)}</title>
-</svelte:head>
+<!-- <svelte:head> -->
+	<!-- <title>{useTitle(SearchPageParams.title, PortfolioTitle)}</title> -->
+<!-- </svelte:head> -->
 <div class="flex flex-col items-stretch gap-10 p-2">
 	<MainTitle>Search</MainTitle>
 	<Input placeholder="Search" bind:value={query} />

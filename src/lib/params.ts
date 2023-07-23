@@ -26,8 +26,6 @@ export const Home: HomeParams = {
 	links: {
 		github: 'https://github.com/velociraptor98',
 		linkedin: 'https://www.linkedin.com/in/kunalsingh98/',
-		// twitter: 'https://twitter.com/',
-		// stackoverflow: 'https://stackoverflow.com/',
 		// email: 'riadh-adrani@hotmail.fr'
 	},
 	skills: Object.keys(Technologies).map((key) => (Technologies as Record<string, Technology>)[key])
@@ -39,28 +37,57 @@ export const PersonalProjects: PersonalProjectsParams = {
 		{
 			color: '#5e95e3',
 			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+				'Hopp is a web app providing community, journaling, activity suggestions, and healthcare service access for those feeling lonely or going through a hard time',
 			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
 			logo: Assets.Unknown,
-			name: 'Slick Portfolio',
+			name: 'Hopp',
 			period: {
-				from: new Date()
+				from: new Date(),
+				to: new Date()
 			},
-			technologies: [Technologies.Angular, Technologies.TypeScript, Technologies.Tailwind],
-			type: 'Website Template'
+			technologies: [Technologies.JavaScript, Technologies.ReactJs, Technologies.NodeJs, Technologies.MongoDB],
+			type: 'Web App'
+		},
+		{
+			color: '#5e95e3',
+			description:
+				'A general purpose 2D game engine written in modern C++. The engine is built using an ECS pattern, allowing for ease of extension for building simple 2-D games.',
+			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			logo: Assets.Unknown,
+			name: 'G2D Engine',
+			period: {
+				from: new Date(),
+				to: new Date()
+			},
+			technologies: [Technologies.Cpp],
+			type: 'Game Engine'
+		},
+		{
+			color: '#5e95e3',
+			description:
+				'An old-school arcade game in the same vein as Arcade shooters.The game features randomly generated enemies along with fun power-ups with the objective of obtaining the highest score.',
+			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			logo: Assets.Unknown,
+			name: 'Galaxy Shooter',
+			period: {
+				from: new Date(),
+				to: new Date()
+			},
+			technologies: [Technologies.Csharp],
+			type: 'Game'
 		},
 		{
 			color: '#ff3e00',
 			description:
-				'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+				'A web app that scrapes the daily headlines from various news sources and performs sentiment analysis on the same. The application aggregates the data and separates them based on their emotion.',
 			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-			logo: Assets.Svelte,
-			name: 'Slick Portfolio',
+			logo: Assets.Unknown,
+			name: 'News Gatherer',
 			period: {
 				from: new Date()
 			},
-			technologies: [Technologies.Svelte, Technologies.TypeScript],
-			type: 'Website Template'
+			technologies: [Technologies.Python, Technologies.Pandas, Technologies.JavaScript,Technologies.HTML, Technologies.CSS],
+			type: 'Web App'
 		}
 	]
 };

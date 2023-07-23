@@ -30,17 +30,7 @@
 		</div>
 	</div>
 	<CardDivider />
-	<div class="project-card-mid">
-		<p class="project-card-type">{project.type}</p>
-		<p class="project-card-period">{period}</p>
-	</div>
 	<p class="project-card-description">{project.description}</p>
-	<div class="project-card-bottom">
-		<Chip label={from} />
-		{#if from !== to}
-			<Chip label={to} />
-		{/if}
-	</div>
 	<CardDivider />
 	<div class="project-card-technologies">
 		{#each project.technologies as tech}
