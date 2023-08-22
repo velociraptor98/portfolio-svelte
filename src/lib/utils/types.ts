@@ -5,7 +5,7 @@ export interface Experience {
 	employmentType: EmploymentType;
 	company: {
 		name: string;
-		logo: string;
+		logo?: string;
 	};
 	location: string;
 	period: {

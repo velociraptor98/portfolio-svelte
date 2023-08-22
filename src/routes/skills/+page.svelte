@@ -5,13 +5,11 @@
 	import Card from '$lib/components/Card/Card.svelte';
 	import CardTitle from '$lib/components/Card/CardTitle.svelte';
 	import slugify from 'slugify';
-
 	const { skills, title } = MySkillsParams;
-
 	import { base } from '$app/paths';
-
-	const skillHref = (skill: FeaturedSkill): string =>
-		`${base}/skills/${slugify(skill.technology.name.toLowerCase())}`;
+	const skillHref = (skill: FeaturedSkill): string => {
+		return `${base}/skills/${slugify(skill.technology.name.toLowerCase())}`;
+		}
 </script>
 
 <svelte:head>

@@ -39,7 +39,7 @@ export const PersonalProjects: PersonalProjectsParams = {
 			description:
 				'Hopp is a web app providing community, journaling, activity suggestions, and healthcare service access for those feeling lonely or going through a hard time',
 			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-			logo: Assets.Unknown,
+			logo: Assets.JavaScript,
 			name: 'Hopp',
 			period: {
 				from: new Date(),
@@ -53,7 +53,7 @@ export const PersonalProjects: PersonalProjectsParams = {
 			description:
 				'A general purpose 2D game engine written in modern C++. The engine is built using an ECS pattern, allowing for ease of extension for building simple 2-D games.',
 			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-			logo: Assets.Unknown,
+			logo: Assets.Cpp,
 			name: 'G2D Engine',
 			period: {
 				from: new Date(),
@@ -67,7 +67,7 @@ export const PersonalProjects: PersonalProjectsParams = {
 			description:
 				'An old-school arcade game in the same vein as Arcade shooters.The game features randomly generated enemies along with fun power-ups with the objective of obtaining the highest score.',
 			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-			logo: Assets.Unknown,
+			logo: Assets.Unity,
 			name: 'Galaxy Shooter',
 			period: {
 				from: new Date(),
@@ -81,7 +81,7 @@ export const PersonalProjects: PersonalProjectsParams = {
 			description:
 				'A web app that scrapes the daily headlines from various news sources and performs sentiment analysis on the same. The application aggregates the data and separates them based on their emotion.',
 			links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-			logo: Assets.Unknown,
+			logo: Assets.Python,
 			name: 'News Gatherer',
 			period: {
 				from: new Date()
@@ -96,7 +96,7 @@ export const ProfessionalCareerParams: CareerParams = {
 	title: 'Professional Experience',
 	items: [
 		{
-			company: { logo: Assets.Unknown, name: 'SmartServ' },
+			company: { name: 'SmartServ' },
 			description: 'Creating awesome applications for customers.',
 			employmentType: EmploymentType.FullTime,
 			industry: 'Software Development',
@@ -106,7 +106,7 @@ export const ProfessionalCareerParams: CareerParams = {
 			title: 'Software Design Engineer - II'
 		},
 		{
-			company: { logo: Assets.Unknown, name: 'SmartServ' },
+			company: { name: 'SmartServ' },
 			description: 'Creating awesome applications for customers.',
 			employmentType: EmploymentType.FullTime,
 			industry: 'Software Development',
@@ -116,7 +116,7 @@ export const ProfessionalCareerParams: CareerParams = {
 			title: 'Software Design Engineer - I'
 		},
 		{
-			company: { logo: Assets.Unknown, name: 'MAQ Software' },
+			company: { name: 'MAQ Software' },
 			description: 'Creating awesome applications for customers.',
 			employmentType: EmploymentType.FullTime,
 			industry: 'Software Development',
@@ -126,7 +126,7 @@ export const ProfessionalCareerParams: CareerParams = {
 			title: 'Software Engineer - I'
 		},
 		{
-			company: { logo: Assets.Unknown, name: 'MAQ Software' },
+			company: { name: 'MAQ Software' },
 			description: 'Creating awesome applications for customers.',
 			employmentType: EmploymentType.Internship,
 			industry: 'Software Development',
@@ -152,11 +152,6 @@ export const MySkillsParams: SkillsParams = {
 		},
 		{
 			technology: Technologies.Svelte,
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.'
-		},
-		{
-			technology: Technologies.Sass,
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.'
 		},
