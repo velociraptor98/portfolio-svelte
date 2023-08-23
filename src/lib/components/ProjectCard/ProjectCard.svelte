@@ -1,7 +1,5 @@
 <script lang="ts">
 	import type { Project } from '$lib/utils';
-	import { countMonths, getMonthName } from '$lib/utils/helpers';
-	import Chip from '../Chip/Chip.svelte';
 	import Card from '../Card/Card.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
 	import CardLink from '../Card/CardLink.svelte';
@@ -9,14 +7,7 @@
 	import ChipIcon from '../Chip/ChipIcon.svelte';
 	import CardLogo from '../Card/CardLogo.svelte';
 	import { theme } from '$lib/stores/theme';
-
 	export let project: Project;
-	$: months = countMonths(project.period.from, project.period.to);
-	$: period = `${months} month${months > 1 ? 's' : ''}`;
-	$: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
-	$: to = project.period.to
-		? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
-		: 'now';
 </script>
 
 <Card color={project.color}>

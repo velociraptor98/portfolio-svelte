@@ -1,20 +1,22 @@
-import { EmploymentType, Technologies, Assets, type SkillsParams, type Technology } from './utils';
+import { EmploymentType, EducationType, Technologies, Assets, type SkillsParams, type Technology } from './utils';
 import type {
 	CareerParams,
 	HomeParams,
 	NavBarParams,
 	PersonalProjectsParams,
-	ResumePageParams
+	ResumePageParams,
+	EducationPageParams
 } from './utils';
 
-export const PortfolioTitle = 'Updated portfolio site';
+export const PortfolioTitle = 'Kunal Singh Portfolio';
 
 export const NavBar: NavBarParams = {
 	home: 'Home',
 	personal: 'Projects',
 	career: 'Experiences',
 	resume: 'Resume',
-	skills: 'Skills'
+	skills: 'Skills',
+	education: 'Education'
 };
 
 export const Home: HomeParams = {
@@ -22,11 +24,11 @@ export const Home: HomeParams = {
 	name: 'Kunal',
 	lastName: 'Singh',
 	description:
-		'First template thingie in progress',
+		'Welcome to my digital realm, where lines of code converge to craft innovative solutions and bring ideas to life. I am a passionate software developer, dedicated to weaving creativity and functionality into every project I undertake. Currently based in UK.',
 	links: {
 		github: 'https://github.com/velociraptor98',
 		linkedin: 'https://www.linkedin.com/in/kunalsingh98/',
-		// email: 'riadh-adrani@hotmail.fr'
+		email: 'litany05_telefax@icloud.com'
 	},
 	skills: Object.keys(Technologies).map((key) => (Technologies as Record<string, Technology>)[key])
 };
@@ -96,22 +98,22 @@ export const ProfessionalCareerParams: CareerParams = {
 	title: 'Professional Experience',
 	items: [
 		{
-			company: { name: 'SmartServ' },
+			company: { name: 'SmartServ (now Zentrades)' },
 			description: 'Creating awesome applications for customers.',
 			employmentType: EmploymentType.FullTime,
 			industry: 'Software Development',
 			location: 'Pune',
-			period: { from: new Date() },
+			period: { from: new Date('October 12, 2021 00:00:00'), to: new Date('September 15, 2022 00:00:00') },
 			skills: [Technologies.JavaScript, Technologies.HTML, Technologies.CSS],
 			title: 'Software Design Engineer - II'
 		},
 		{
-			company: { name: 'SmartServ' },
+			company: { name: 'SmartServ (now Zentrades)' },
 			description: 'Creating awesome applications for customers.',
 			employmentType: EmploymentType.FullTime,
 			industry: 'Software Development',
 			location: 'Pune',
-			period: { from: new Date() },
+			period: { from: new Date('October 12, 2020 00:00:00'), to: new Date('October 12, 2021 00:00:00') },
 			skills: [Technologies.JavaScript, Technologies.HTML, Technologies.CSS],
 			title: 'Software Design Engineer - I'
 		},
@@ -121,7 +123,7 @@ export const ProfessionalCareerParams: CareerParams = {
 			employmentType: EmploymentType.FullTime,
 			industry: 'Software Development',
 			location: 'Hyderabad',
-			period: { from: new Date() },
+			period: { from: new Date('July 06, 2020 00:00:00'), to: new Date('October 09, 2020 00:00:00') },
 			skills: [Technologies.Csharp, Technologies.HTML, Technologies.CSS],
 			title: 'Software Engineer - I'
 		},
@@ -131,7 +133,7 @@ export const ProfessionalCareerParams: CareerParams = {
 			employmentType: EmploymentType.Internship,
 			industry: 'Software Development',
 			location: 'Hyderabad',
-			period: { from: new Date() },
+			period: { from: new Date('January 06, 2020 00:00:00'), to: new Date('July 04, 2020 00:00:00') },
 			skills: [Technologies.Csharp, Technologies.HTML, Technologies.CSS],
 			title: 'Software Engineer - I'
 		}
@@ -169,6 +171,23 @@ export const ResumeParams: ResumePageParams = {
 	cv: ''
 };
 
-// export const SearchPageParams = {
-// 	title: 'Search'
-// };
+export const EducationParams: EducationPageParams = {
+	title: 'Education',
+	education:[
+		{
+			UniversityName:{name: "University of Exeter"},
+			location:'Exeter, UK',
+			educationType: EducationType.Msc,
+			subject: 'Advanced Computer Science',
+			period:{ from: new Date('September 16, 2022 00:00:00'), to: new Date('September 25, 2023 00:00:00')}
+		},
+		{
+			UniversityName:{name: "BML Munjal University"},
+			location:'Gurugram, India',
+			educationType: EducationType.BTech,
+			subject: 'Computer Science',
+			period:{ from: new Date('August 14, 2016 00:00:00'), to: new Date('July 14, 2020 00:00:00')}
+		}
+	]
+
+}

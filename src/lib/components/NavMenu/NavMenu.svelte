@@ -17,10 +17,10 @@
 	}
 
 	const items: Array<NavMenuItem> = [
-		{ title: NavBar.skills, to: '/skills', icon: Icons.Skills },
-		{ title: NavBar.personal, to: '/projects', icon: Icons.Projects },
 		{ title: NavBar.career, to: '/experience', icon: Icons.Job },
-		// { title: NavBar.resume, to: '/resume', icon: Icons.Resume }
+		{ title: NavBar.personal, to: '/projects', icon: Icons.Projects },
+		{ title: NavBar.skills, to: '/skills', icon: Icons.Skills },
+		{ title: NavBar.education, to: '/education', icon: Icons.Skills },
 	];
 </script>
 

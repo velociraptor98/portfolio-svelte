@@ -1,47 +1,38 @@
 <script lang="ts">
-	import type { Experience } from '$lib/utils';
+	import type { Education } from '$lib/utils';
 	import { countMonths, getMonthName } from '$lib/utils/helpers';
 	import Card from '../Card/Card.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
 	import Chip from '../Chip/Chip.svelte';
-	import ChipIcon from '../Chip/ChipIcon.svelte';
-	import { theme } from '$lib/stores/theme';
 
-	export let experience: Experience;
-	const months = countMonths(experience.period.from, experience.period.to);
+	export let education: Education;
+	const months = countMonths(education.period.from, education.period.to);
 	const from = `${getMonthName(
-		experience.period.from.getMonth()
-	)} ${experience.period.from.getFullYear()}`;
-	const to = experience.period.to
-		? `${getMonthName(experience.period.to.getMonth())} ${experience.period.to.getFullYear()}`
+		education.period.from.getMonth()
+	)} ${education.period.from.getFullYear()}`;
+	const to = education.period.to
+		? `${getMonthName(education.period.to.getMonth())} ${education.period.to.getFullYear()}`
 		: 'Present';
-	// const period = `${from} - ${to}`;
 	const period = `${from} - ${to} · ${months} month${months > 1 ? 's' : ''}`;
 </script>
 
 <Card margin="0px 0px 20px 0px" tiltDegree={2}>
-	<div class="experience">
-		<div class="experience-data">
-			<h3 class="experience-title">
-				<CardTitle title={experience.title} />
-				<div class="experience-title-divider" />
-				<Chip label={experience.employmentType} size="0.75em" />
+	<div class="education">
+		<div class="education-data">
+			<h3 class="education-title">
+				<CardTitle title={education.subject} />
+				<div class="education-title-divider" />
+				<Chip label={education.educationType} size="0.75em" />
 			</h3>
-			<span class="experience-company-name">{experience.company.name}</span>
-			<div class="experience-period">{period}</div>
-			<div class="experience-location">{experience.location}</div>
-			<div class="experience-description">{experience.description}</div>
-			<div class="experience-skills">
-				{#each experience.skills as skill}
-					<ChipIcon logo={skill.logo} name={skill.name} inverted={$theme && skill.inverted} />
-				{/each}
-			</div>
+			<span class="education-company-name">{education.UniversityName.name}</span>
+			<div class="education-period">{period}</div>
+			<div class="education-location">{education.location}</div>
 		</div>
 	</div>
 </Card>
 
 <style lang="scss">
-	.experience {
+	.education {
 		display: flex;
 		align-items: flex-start;
 

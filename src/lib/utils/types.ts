@@ -1,4 +1,4 @@
-import type { EmploymentType, Icons } from '.';
+import type { EmploymentType, EducationType, Icons } from '.';
 
 export interface Experience {
 	title: string;
@@ -42,6 +42,19 @@ export interface Project {
 	links: Array<ProjectLink>;
 }
 
+export interface Education{
+	educationType: EducationType;
+	UniversityName: {
+		name: string;
+		logo?: string;
+	};
+	location: string;
+	period: {
+		from: Date;
+		to?: Date;
+	};
+	subject: string;
+}
 export interface Link {
 	to: string;
 	title: string;
@@ -75,6 +88,7 @@ export interface NavBarParams {
 	career: string;
 	resume: string;
 	skills: string;
+	education: string;
 }
 
 export interface PersonalProjectsParams extends PageParams {
@@ -96,4 +110,8 @@ export interface FeaturedSkill {
 
 export interface SkillsParams extends PageParams {
 	skills: Array<FeaturedSkill>;
+}
+
+export interface EducationPageParams extends PageParams {
+	education: Array<Education>;
 }
