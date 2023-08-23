@@ -48,28 +48,23 @@
 				project.technologies.some((tech) =>
 					filters.some((filter) => filter.isSelected && filter.name === tech.name)
 				);
-
-			const isSearched =
-				search.trim().length === 0 ||
-				project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
-
-			return isFiltered && isSearched;
+			return isFiltered;
 		});
 	}
 
-	onMount(() => {
-		const query = location.search;
+	// onMount(() => {
+	// 	const query = location.search;
 
-		if (query) {
-			const queryParams = new URLSearchParams(location.search);
+	// 	if (query) {
+	// 		const queryParams = new URLSearchParams(location.search);
 
-			const item = queryParams.get('item');
+	// 		const item = queryParams.get('item');
 
-			if (item) {
-				search = item;
-			}
-		}
-	});
+	// 		if (item) {
+	// 			search = item;
+	// 		}
+	// 	}
+	// });
 </script>
 
 <svelte:head>
@@ -77,9 +72,6 @@
 </svelte:head>
 <div class="projects">
 	<MainTitle>{title}</MainTitle>
-	<div class="projects-search">
-		<Input bind:value={search} placeholder="Enter keywords..." />
-	</div>
 	<div class="projects-filters">
 		{#each filters as tech}
 			<Chip label={tech.name} active={tech.isSelected} on:click={() => onSelected(tech)} />

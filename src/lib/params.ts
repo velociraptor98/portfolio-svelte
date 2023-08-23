@@ -145,23 +145,142 @@ export const MySkillsParams: SkillsParams = {
 		{
 			technology: Technologies.JavaScript,
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.'
+				''
 		},
 		{
 			technology: Technologies.TypeScript,
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.'
+				''
 		},
 		{
 			technology: Technologies.Svelte,
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.'
+				''
 		},
 		{
 			technology: Technologies.CSS,
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.'
+				''
+		},
+		{
+			technology: Technologies.AWS,
+			description: ''
+		},
+		{
+			technology:Technologies.Cpp,
+			description:''
+		},
+		{
+			technology:Technologies.Csharp,
+			description:''
+		},
+		{
+			technology:Technologies.Unity,
+			description:''
+		},
+		{
+			technology:Technologies.Unreal,
+			description:''
+		},
+		{
+			technology:Technologies.ReactJs,
+			description:''
+		},
+		{
+			technology:Technologies.Rust,
+			description:''
+		},
+		{
+			technology:Technologies.Go,
+			description:''
+		},
+		{
+			technology:Technologies.NodeJs,
+			description:''
+		},
+		
+		{
+			technology:Technologies.Godot,
+			description:''
+		},
+		{
+			technology:Technologies.Python,
+			description:''
+		},
+		{
+			technology:Technologies.Tailwind,
+			description:''
 		}
+	],
+	languages:[
+		{
+			technology: Technologies.JavaScript,
+			description:
+				''
+		},
+		{
+			technology: Technologies.TypeScript,
+			description:
+				''
+		},
+		{
+			technology:Technologies.Cpp,
+			description:''
+		},
+		{
+			technology:Technologies.Csharp,
+			description:''
+		},
+		{
+			technology:Technologies.Rust,
+			description:''
+		},
+		{
+			technology:Technologies.Go,
+			description:''
+		},
+		{
+			technology:Technologies.Python,
+			description:''
+		},
+	],
+	frameworks:[
+		{
+			technology: Technologies.Svelte,
+			description:
+				''
+		},
+		{
+			technology: Technologies.CSS,
+			description:
+				''
+		},
+		{
+			technology:Technologies.NodeJs,
+			description:''
+		},
+		{
+			technology:Technologies.Tailwind,
+			description:''
+		},
+		{
+			technology:Technologies.ReactJs,
+			description:''
+		},
+	],
+	gameengines:[
+		{
+			technology:Technologies.Unity,
+			description:''
+		},
+		{
+			technology:Technologies.Unreal,
+			description:''
+		},
+		{
+			technology:Technologies.Godot,
+			description:''
+		},
 	],
 	title: 'My Skills'
 };

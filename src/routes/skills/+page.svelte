@@ -5,7 +5,7 @@
 	import Card from '$lib/components/Card/Card.svelte';
 	import CardTitle from '$lib/components/Card/CardTitle.svelte';
 	import slugify from 'slugify';
-	const { skills, title } = MySkillsParams;
+	const {languages, gameengines, frameworks,title } = MySkillsParams;
 	import { base } from '$app/paths';
 	const skillHref = (skill: FeaturedSkill): string => {
 		return `${base}/skills/${slugify(skill.technology.name.toLowerCase())}`;
@@ -17,16 +17,42 @@
 </svelte:head>
 
 <div class="skills">
-	<MainTitle>{title}</MainTitle>
+	<MainTitle>Languages</MainTitle>
 	<div class="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 mt-10">
-		{#each skills as skill}
+		{#each languages as language}
 			<Card
 				classes={['cursor-pointer']}
 				tiltDegree={1}
-				href={skillHref(skill)}
-				bgImg={skill.technology.logo}
+				href={skillHref(language)}
+				bgImg={language.technology.logo}
 			>
-				<CardTitle title={skill.technology.name} />
+				<CardTitle title={language.technology.name} />
+			</Card>
+		{/each}
+	</div>
+	<MainTitle>Frameworks</MainTitle>
+	<div class="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 mt-10">
+		{#each frameworks as framework}
+			<Card
+				classes={['cursor-pointer']}
+				tiltDegree={1}
+				href={skillHref(framework)}
+				bgImg={framework.technology.logo}
+			>
+				<CardTitle title={framework.technology.name} />
+			</Card>
+		{/each}
+	</div>
+	<MainTitle>Game Engines</MainTitle>
+	<div class="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 mt-10">
+		{#each gameengines as gameengine}
+			<Card
+				classes={['cursor-pointer']}
+				tiltDegree={1}
+				href={skillHref(gameengine)}
+				bgImg={gameengine.technology.logo}
+			>
+				<CardTitle title={gameengine.technology.name} />
 			</Card>
 		{/each}
 	</div>
