@@ -6,7 +6,7 @@
 	import { theme } from '$lib/stores/theme';
 
 	export let items: Array<Technology> = [];
-	const delay = 2000;
+	const delay = 1000;
 
 	let element: HTMLElement;
 
@@ -43,26 +43,10 @@
 
 	const toggle = (right: boolean) => {
 		clearTimeout(timeout as number);
-
 		timeout = setTimeout(() => {
 			slide(right);
-
 			toggle(toRight);
 		}, delay);
-	};
-
-	const toggleLeft = () => {
-		clearTimeout(timeout as number);
-		toRight = false;
-		slide(false);
-		toggle(toRight);
-	};
-
-	const toggleRight = () => {
-		clearTimeout(timeout as number);
-		toRight = true;
-		slide(true);
-		toggle(toRight);
 	};
 
 	onMount(() => {
@@ -71,10 +55,6 @@
 </script>
 
 <div class="carrousel">
-	<div class="carrousel-btn" on:click={toggleLeft} on:keyup on:keydown on:keypress>
-		<Icon icon={Icons.LeftArrow} size="20px" color={'var(--border-hover)'} />
-	</div>
-
 	<div bind:this={element} class="carrousel-content">
 		{#each items as item}
 			<div class="carrousel-item">
@@ -87,10 +67,6 @@
 				<span class="carrousel-item-label">{item.name}</span>
 			</div>
 		{/each}
-	</div>
-
-	<div class="carrousel-btn" on:click={toggleRight} on:keyup on:keydown on:keypress>
-		<Icon icon={Icons.RightArrow} color={'var(--border-hover)'} size="20px" />
 	</div>
 </div>
 
