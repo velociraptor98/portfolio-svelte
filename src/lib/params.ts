@@ -16,7 +16,7 @@ export const NavBar: NavBarParams = {
 	career: 'Experiences',
 	resume: 'Resume',
 	skills: 'Skills',
-	education: 'Education'
+	education: 'Academic'
 };
 
 export const Home: HomeParams = {
@@ -175,14 +175,14 @@ export const EducationParams: EducationPageParams = {
 	title: 'Education',
 	education:[
 		{
-			UniversityName:{name: "University of Exeter"},
+			UniversityName:{name: "University of Exeter",logo:Assets.Exeter},
 			location:'Exeter, UK',
 			educationType: EducationType.Msc,
 			subject: 'Advanced Computer Science',
 			period:{ from: new Date('September 16, 2022 00:00:00'), to: new Date('September 25, 2023 00:00:00')}
 		},
 		{
-			UniversityName:{name: "BML Munjal University"},
+			UniversityName:{name: "BML Munjal University",logo:Assets.Bml},
 			location:'Gurugram, India',
 			educationType: EducationType.BTech,
 			subject: 'Computer Science',

@@ -2,6 +2,7 @@
 	import type { Education } from '$lib/utils';
 	import { countMonths, getMonthName } from '$lib/utils/helpers';
 	import Card from '../Card/Card.svelte';
+	import CardLogo from '../Card/CardLogo.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
 	import Chip from '../Chip/Chip.svelte';
 
@@ -20,11 +21,13 @@
 	<div class="education">
 		<div class="education-data">
 			<h3 class="education-title">
-				<CardTitle title={education.subject} />
+				<CardLogo alt={education.UniversityName.name} src={education.UniversityName.logo} size={160} radius={'0'} />
+				<!-- <CardTitle title={education.subject} /> -->
 				<div class="education-title-divider" />
 				<Chip label={education.educationType} size="0.75em" />
 			</h3>
 			<span class="education-company-name">{education.UniversityName.name}</span>
+			<span class="education-company-name">{education.subject}</span>
 			<div class="education-period">{period}</div>
 			<div class="education-location">{education.location}</div>
 		</div>

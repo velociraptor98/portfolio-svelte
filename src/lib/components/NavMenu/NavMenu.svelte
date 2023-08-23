@@ -20,7 +20,7 @@
 		{ title: NavBar.career, to: '/experience', icon: Icons.Job },
 		{ title: NavBar.personal, to: '/projects', icon: Icons.Projects },
 		{ title: NavBar.skills, to: '/skills', icon: Icons.Skills },
-		{ title: NavBar.education, to: '/education', icon: Icons.Skills },
+		{ title: NavBar.education, to: '/education', icon: Icons.Academic },
 	];
 </script>
 

@@ -29,6 +29,9 @@ import Rust from '$lib/assets/logos/rust.svg';
 import Godot from '$lib/assets/logos/godot.svg';
 import Unity from '$lib/assets/logos/unity.svg';
 import Unreal from '$lib/assets/logos/unreal.svg';
+import Exeter from '$lib/assets/logos/exeter.svg';
+import Bml from '$lib/assets/logos/bml.png';
+
 export default {
 	AWS,
 	Bootstrap,
@@ -61,4 +64,6 @@ export default {
 	Godot,
 	Unity,
 	Unreal,
+	Exeter,
+	Bml,
 };
