@@ -21,7 +21,6 @@ import Bootstrap from '$lib/assets/logos/bootstrap.svg';
 import C from '$lib/assets/logos/c.svg';
 import Cpp from '$lib/assets/logos/cpp.svg';
 import FastApi from '$lib/assets/logos/fastapi.svg';
-import Flask from '$lib/assets/logos/flask.svg';
 import Go from '$lib/assets/logos/go.svg';
 import Nginx from '$lib/assets/logos/nginx.svg';
 import Numpy from '$lib/assets/logos/numpy.svg';
@@ -36,7 +35,6 @@ export default {
 	C,
 	Cpp,
 	FastApi,
-	Flask,
 	Go,
 	Nginx,
 	Numpy,
