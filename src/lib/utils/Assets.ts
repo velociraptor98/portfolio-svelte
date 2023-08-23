@@ -20,7 +20,6 @@ import AWS from '$lib/assets/logos/aws.svg';
 import Bootstrap from '$lib/assets/logos/bootstrap.svg';
 import C from '$lib/assets/logos/c.svg';
 import Cpp from '$lib/assets/logos/cpp.svg';
-import Django from '$lib/assets/logos/django.svg';
 import FastApi from '$lib/assets/logos/fastapi.svg';
 import Flask from '$lib/assets/logos/flask.svg';
 import Go from '$lib/assets/logos/go.svg';
@@ -36,7 +35,6 @@ export default {
 	Bootstrap,
 	C,
 	Cpp,
-	Django,
 	FastApi,
 	Flask,
 	Go,
