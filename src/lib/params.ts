@@ -141,77 +141,6 @@ export const ProfessionalCareerParams: CareerParams = {
 };
 
 export const MySkillsParams: SkillsParams = {
-	skills: [
-		{
-			technology: Technologies.JavaScript,
-			description:
-				''
-		},
-		{
-			technology: Technologies.TypeScript,
-			description:
-				''
-		},
-		{
-			technology: Technologies.Svelte,
-			description:
-				''
-		},
-		{
-			technology: Technologies.CSS,
-			description:
-				''
-		},
-		{
-			technology: Technologies.AWS,
-			description: ''
-		},
-		{
-			technology:Technologies.Cpp,
-			description:''
-		},
-		{
-			technology:Technologies.Csharp,
-			description:''
-		},
-		{
-			technology:Technologies.Unity,
-			description:''
-		},
-		{
-			technology:Technologies.Unreal,
-			description:''
-		},
-		{
-			technology:Technologies.ReactJs,
-			description:''
-		},
-		{
-			technology:Technologies.Rust,
-			description:''
-		},
-		{
-			technology:Technologies.Go,
-			description:''
-		},
-		{
-			technology:Technologies.NodeJs,
-			description:''
-		},
-		
-		{
-			technology:Technologies.Godot,
-			description:''
-		},
-		{
-			technology:Technologies.Python,
-			description:''
-		},
-		{
-			technology:Technologies.Tailwind,
-			description:''
-		}
-	],
 	languages:[
 		{
 			technology: Technologies.JavaScript,
@@ -267,6 +196,14 @@ export const MySkillsParams: SkillsParams = {
 			technology:Technologies.ReactJs,
 			description:''
 		},
+		{
+			technology:Technologies.ExpressJs,
+			description:''
+		},
+		{
+			technology:Technologies.Electron,
+			description:''
+		},
 	],
 	gameengines:[
 		{
@@ -281,6 +218,26 @@ export const MySkillsParams: SkillsParams = {
 			technology:Technologies.Godot,
 			description:''
 		},
+	],
+	databases:[
+		{
+			technology: Technologies.MongoDB,
+			description: ''
+		},
+		{
+			technology: Technologies.Redis,
+			description: ''
+		}
+	],
+	tooling:[
+		{
+			technology: Technologies.AWS,
+			description: ''
+		},
+		{
+			technology: Technologies.Nginx,
+			description: ''
+		}
 	],
 	title: 'My Skills'
 };

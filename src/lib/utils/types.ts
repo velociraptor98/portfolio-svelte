@@ -109,10 +109,11 @@ export interface FeaturedSkill {
 }
 
 export interface SkillsParams extends PageParams {
-	skills: Array<FeaturedSkill>;
 	languages: Array<FeaturedSkill>;
 	frameworks: Array<FeaturedSkill>;
 	gameengines: Array<FeaturedSkill>;
+	databases: Array<FeaturedSkill>;
+	tooling: Array<FeaturedSkill>;
 }
 
 export interface EducationPageParams extends PageParams {
