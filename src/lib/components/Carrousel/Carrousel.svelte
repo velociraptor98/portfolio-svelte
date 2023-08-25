@@ -76,7 +76,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
+		background-color: rgba(171, 248, 245, 0.278); 
+		backdrop-filter: blur(15px);
+		filter: blur(0.5px);
+		border: 2px solid var(--border);
+		border-radius: 15px;
 		&-content {
 			display: flex;
 			width: 150px;
@@ -91,13 +95,10 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-
 			&-img {
 				height: 120px;
 				width: 120px;
-
 				max-width: initial;
-
 				&-inverted {
 					filter: invert(100);
 				}

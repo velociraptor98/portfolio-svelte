@@ -1,12 +1,10 @@
 <script lang="ts">
 	import Chip from '$lib/components/Chip/Chip.svelte';
-	import Input from '$lib/components/Input/Input.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
 	import ProjectCard from '$lib/components/ProjectCard/ProjectCard.svelte';
 	import { PersonalProjects, PortfolioTitle } from '$lib/params';
 	import type { Project, Technology } from '$lib/utils';
 	import { useTitle } from '$lib/utils';
-	import { onMount } from 'svelte';
 
 	interface TechnologyFilter extends Technology {
 		isSelected?: boolean;
@@ -51,20 +49,6 @@
 			return isFiltered;
 		});
 	}
-
-	// onMount(() => {
-	// 	const query = location.search;
-
-	// 	if (query) {
-	// 		const queryParams = new URLSearchParams(location.search);
-
-	// 		const item = queryParams.get('item');
-
-	// 		if (item) {
-	// 			search = item;
-	// 		}
-	// 	}
-	// });
 </script>
 
 <svelte:head>

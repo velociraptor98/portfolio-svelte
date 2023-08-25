@@ -4,38 +4,28 @@
 
 :root {
 	color-scheme: dark;
+    --dark-0: #000000;
+	--dark-1: #111111;
+	--dark-2: #232323;
+	--dark-3: #343434;
+	--dark-4: #464646;
+	--dark-5: #575757;
+	--dark-6: #696969;
+	--dark-7: #7a7a7a;
+	--dark-8: #caf0f8;
 
-	// --dark-0: #000;
-	// --dark-1: #1e1e1e;
-	// --dark-2: #2e2e2e;
-	// --dark-3: #3e3e3e;
-	// --dark-4: #4e4e4e;
-	// --dark-5: #5e5e5e;
-	// --dark-6: #6e6e6e;
-	// --dark-7: #7e7e7e;
-	// --dark-8: #8e8e8e;
-    --dark-0: #240E47;
-	--dark-1: #4B4453;
-	--dark-2: #B1A8B9;
-	--dark-3: #003D30;
-	--dark-4: #006F5E;
-	--dark-5: #5e5e5e;
-	--dark-6: #6e6e6e;
-	--dark-7: #7e7e7e;
-	--dark-8: #8e8e8e;
-
-	--light-0: #fff;
-	--light-1: #e1e1e1;
-	--light-2: #d1d1d1;
-	--light-3: #c1c1c1;
-	--light-4: #b1b1b1;
-	--light-5: #a1a1a1;
-	--light-6: #919191;
+	--light-0: #edf2fb;
+	--light-1: #e2eafc;
+	--light-2: #d7e3fc;
+	--light-3: #ccdbfd;
+	--light-4: #c1d3fe;
+	--light-5: #b6ccfe;
+	--light-6: #abc4ff;
 	--light-7: #818181;
 	--light-8: #717171;
 
-	--dark-0-60: rgba(0, 0, 0, 0.6);
-	--light-0-60: rgba(255, 255, 255, 0.6);
+	--dark-0-60: rgba(0, 0, 0, 0.248);
+	--light-0-60: rgba(255, 255, 255, 0.69);
 
 	// fonts
 	--text-f: 'Ubuntu';

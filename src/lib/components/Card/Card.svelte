@@ -86,12 +86,15 @@
 
 		display: inline-flex;
 		flex-direction: column;
-		border: 1px solid var(--border);
+		border: 2px solid var(--border);
 		border-radius: 15px;
 		transition-duration: 200ms;
 		position: relative;
 		background: linear-gradient(90deg, var(--main) 0%, var(--main) 60%, var(--main-60) 100%),
-			no-repeat right 40% / 40% var(--bg-img);
+		no-repeat right 40% / 40% var(--bg-img);
+		background-color: rgb(228 228 228 / 15%); 
+		backdrop-filter: blur(15px);
+		box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
 
 		&-bg-img {
 			padding: 25px;
