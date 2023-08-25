@@ -12,7 +12,8 @@ const config = {
 	kit: {
 		adapter: adapter({ fallback: '404.html' }),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/portfolio-svelte' : ''
+			// base: process.env.NODE_ENV === 'production' ? '/portfolio-svelte' : ''
+			base: process.env.NODE_ENV === 'production' ? 'https://www.kunalsingh.engineer/' : ''
 		}
 	}
 };
