@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Carrousel from '$lib/components/Carrousel/Carrousel.svelte';
 	import Icon from '$lib/components/Icon/Icon.svelte';
 	import { Home, PortfolioTitle } from '$lib/params';
 	import type { SocialLink, SocialMedia } from '$lib/utils';
@@ -47,7 +46,6 @@
 			{/each}
 		</div>
 	</div>
-	<Carrousel items={skills} />
 </div>
 
 <style lang="scss">
