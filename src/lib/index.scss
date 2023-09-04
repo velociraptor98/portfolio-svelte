@@ -32,6 +32,8 @@
 	--title-f: 'Fira Sans';
 
 	overflow-y: scroll;
+	--dark-background: url("https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?cs=srgb&dl=pexels-alex-andrews-816608.jpg&fm=jpg&w=1920&h=1900");
+	--light-background: url("https://images.pexels.com/photos/2575278/pexels-photo-2575278.jpeg?cs=srgb&dl=pexels-evie-shaffer-2575278.jpg&fm=jpg&w=1920&h=1900");
 }
 
 .theme-dark {
@@ -57,6 +59,7 @@
 	--border-hover: var(--light-7);
 
 	--main-60: var(--dark-0-60);
+	--background-i: var(--dark-background);
 }
 
 .theme-light {
@@ -82,6 +85,7 @@
 	--border-hover: var(--dark-8);
 
 	--main-60: var(--light-0-60);
+	--background-i: var(--light-background)
 }
 
 

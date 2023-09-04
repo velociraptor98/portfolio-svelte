@@ -41,10 +41,9 @@
 		display: flex;
 		flex-direction: column;
 		transition-duration: 200ms;
-
 		letter-spacing: 1px;
-
 		min-height: 100vh;
+		background-image: var(--background-i);
 	}
 
 	:global(p) {
